@@ -1,0 +1,89 @@
+@media (width<=1024px) {
+  .sg_slider button.slick-prev::before {
+    left: -35px;
+  }
+  .sg_slider button.slick-next::before {
+    right: -35px;
+  }
+  .player_stats_accordion .accordion-item,
+  .player_stats_accordion .accordion-item button {
+    background-color: #3c3c3c !important;
+    color: #fff;
+  }
+  .player_stats_accordion .player_stats_image img {
+    max-height: 350px;
+    object-fit: contain;
+    margin: auto;
+  }
+  .accordion.player_stats_accordion {
+    --bs-accordion-border-color: transparent;
+  }
+  .player_stats_accordion button::after,
+  .player_stats_accordion button:not(.collapsed)::after {
+    content: "\F282";
+    font-family: "bootstrap-icons";
+    background: transparent;
+    height: 40px;
+  }
+  .player_stats_accordion button:focus {
+    border: transparent;
+    box-shadow: none;
+  }
+  .hide-tabs {
+    display: none;
+  }
+  .width-notFull-mob {
+    padding: 0 20px;
+  }
+  .player_stats_accordion .accordion-item:has(.show) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width<=767px) {
+  .hide-mobile {
+    display: none;
+  }
+  .fd-mob-col {
+    flex-direction: column;
+  }
+  .sg_navbar .navbar-logins {
+    gap: 20px;
+  }
+  .latest_posts_wrapper img {
+    width: 100%;
+  }
+  /* .sg_navbar .navbar-logins a span {
+    display: none;
+  } */
+  .latest_posts_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  /* footer */
+  footer {
+    padding: 0;
+  }
+  .footer-menus ul {
+    flex-wrap: wrap;
+    gap: 20px 0;
+    align-items: center;
+  }
+  .footer-menus ul a {
+    width: 50%;
+  }
+  .footer_container_contents h6 {
+    text-align: center;
+  }
+  .footer_logo img {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* logins style */
+  .forms_container {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+}
